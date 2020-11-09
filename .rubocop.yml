@@ -1,0 +1,42 @@
+AllCops:
+  TargetRubyVersion: 2.4
+  NewCops: enable
+  Exclude:
+    - "db/schema.rb"
+    - "db/seeds.rb"
+    - "db/migrate/*"
+    - "vendor/**/*"
+    #     - 'spec/**/*'
+    - "spec/fixtures/**/*"
+    - "spec/rails_helper.rb"
+    - "spec/spec_helper.rb"
+    - "tmp/**/*"
+    - "config/puma.rb"
+    - "bin/*"
+    - "config/environments/*"
+    - "Guardfile"
+    - "config/spring.rb"
+    - "config/application.rb"
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/SymbolArray:
+  EnforcedStyle: brackets
+
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
+Metrics/AbcSize:
+  Max: 30
+
+Metrics/MethodLength:
+  Max: 20
+
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*"
+
