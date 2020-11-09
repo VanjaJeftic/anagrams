@@ -1,6 +1,5 @@
 class Anagrams
   def initialize(text_file)
-    # check_file_extension(text_file)
     @text_file = text_file
   end
 
