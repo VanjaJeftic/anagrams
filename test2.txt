@@ -2,6 +2,5 @@ pictures
 output
 crepitus
 putout
-inlets
-listen 
-enlist 
+listen
+enlist
