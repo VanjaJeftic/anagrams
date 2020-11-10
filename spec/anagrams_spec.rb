@@ -41,13 +41,13 @@ describe Anagrams do
 
   context 'empty should give error' do
     it 'input parameter is empty string' do
-      expect { Anagrams.new('') }.to raise_error
+      expect { Anagrams.new('') }.to raise_error(StandardError, 'Input is empty or file does not exist!')
     end
   end
 
   context 'file that does not exist should give error' do
     it "input parameter is 'test.txt'" do
-      expect { Anagrams.new('test.txt') }.to raise_error
+      expect { Anagrams.new('test.txt') }.to raise_error(StandardError, 'Input is empty or file does not exist!')
     end
   end
 end
