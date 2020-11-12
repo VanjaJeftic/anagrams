@@ -1,11 +1,9 @@
 require_relative 'lib/anagrams'
 
-print 'Enter the file: '
-input = gets.chomp
-puts ''
+input = ARGV
 
 begin
-  anagrams = Anagrams.new(input)
+  anagrams = Anagrams.new(input[0], input[1])
 rescue StandardError => e
   puts "An error of type #{e.class} happened, message is: #{e.message}"
   exit
